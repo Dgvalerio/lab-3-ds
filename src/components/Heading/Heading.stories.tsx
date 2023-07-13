@@ -1,9 +1,9 @@
-import { Text, TextProps } from './Text.tsx'
+import { Heading, HeadingProps } from './Heading.tsx'
 import { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: 'Components/Text',
-  component: Text,
+  title: 'Components/Heading',
+  component: Heading,
   args: {
     children: 'Lorem ipsum',
   },
@@ -12,9 +12,9 @@ export default {
     children: { table: { disable: true } },
     asChild: { table: { disable: true } },
   },
-} as Meta<TextProps>
+} as Meta<HeadingProps>
 
-type Story = StoryObj<TextProps>
+type Story = StoryObj<HeadingProps>
 
 export const Large: Story = { args: { size: 'lg' } }
 
@@ -23,5 +23,5 @@ export const Default: Story = {}
 export const Small: Story = { args: { size: 'sm' } }
 
 export const CustomComponent: Story = {
-  args: { asChild: true, children: <p>Text with P tag</p> },
+  args: { asChild: true, children: <h1>Heading with H1</h1> },
 }
