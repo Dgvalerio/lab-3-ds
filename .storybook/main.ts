@@ -14,6 +14,13 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal: (config, {  configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/lab-3-ds/'
+    }
+
+    return config
+  }
 };
 
 export default config;
