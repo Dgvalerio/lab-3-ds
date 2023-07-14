@@ -6,6 +6,7 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "@storybook/addon-a11y",
   ],
   framework: {
     name: "@storybook/react-vite",
@@ -14,13 +15,13 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-  viteFinal: (config, {  configType }) => {
-    if (configType === 'PRODUCTION') {
-      config.base = '/lab-3-ds/'
+  viteFinal: (config, { configType }) => {
+    if (configType === "PRODUCTION") {
+      config.base = "/lab-3-ds/";
     }
 
-    return config
-  }
+    return config;
+  },
 };
 
 export default config;
