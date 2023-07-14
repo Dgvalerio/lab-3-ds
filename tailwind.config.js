@@ -5,7 +5,10 @@ export default {
   ],
   theme: {
     colors: {
+      // Black
       black: '#000000',
+      // White
+      white: '#ffffff',
       // Gray
       'gray-100': '#E1E1E6',
       'gray-200': '#C4C4CC',
